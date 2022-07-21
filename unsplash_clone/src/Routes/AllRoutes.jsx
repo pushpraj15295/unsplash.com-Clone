@@ -28,30 +28,30 @@ const AllRoutes = () => {
   return (
     <>
       <Routes>
-        <Route to="/" element={<Home />} />
-        <Route to="/renders" element={<Renders />} />
-        <Route to="/animals" element={<Animals />} />
-        <Route to="/architecture" element={<Architecture />} />
-        <Route to="/artsCulture" element={<ArtsCulture />} />
-        <Route to="/athletics" element={<Athletics />} />
-        <Route to="/businessWork" element={<BusinessWork />} />
-        <Route to="/currentEvents" element={<CurrentEvents />} />
-        <Route to="/editorial" element={<Editorial />} />
-        <Route to="/experimental" element={<Experimental />} />
-        <Route to="/fashion" element={<Fashion />} />
-        <Route to="/film" element={<Film />} />
-        <Route to="/following" element={<Following />} />
-        <Route to="/foodDrink" element={<FoodDrink />} />
-        <Route to="/healthWellness" element={<HealthWellness />} />
-        <Route to="/history" element={<History />} />
-        <Route to="/interiors" element={<Interiors />} />
-        <Route to="/nature" element={<Nature />} />
-        <Route to="/People" element={<People />} />
-        <Route to="/spirituality" element={<Spirituality />} />
-        <Route to="/streetPhotography" element={<StreetPhotography />} />
-        <Route to="/texturesPatterns" element={<TexturesPatterns />} />
-        <Route to="/travel" element={<Travel />} />
-        <Route to="/wallpapers" element={<Wallpapers />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/renders" element={<Renders />} />
+        <Route path="/animals" element={<Animals />} />
+        <Route path="/architecture" element={<Architecture />} />
+        <Route path="/artsCulture" element={<ArtsCulture />} />
+        <Route path="/athletics" element={<Athletics />} />
+        <Route path="/businessWork" element={<BusinessWork />} />
+        <Route path="/currentEvents" element={<CurrentEvents />} />
+        <Route path="/editorial" element={<Editorial />} />
+        <Route path="/experimental" element={<Experimental />} />
+        <Route path="/fashion" element={<Fashion />} />
+        <Route path="/film" element={<Film />} />
+        <Route path="/following" element={<Following />} />
+        <Route path="/foodDrink" element={<FoodDrink />} />
+        <Route path="/healthWellness" element={<HealthWellness />} />
+        <Route path="/history" element={<History />} />
+        <Route path="/interiors" element={<Interiors />} />
+        <Route path="/nature" element={<Nature />} />
+        <Route path="/People" element={<People />} />
+        <Route path="/spirituality" element={<Spirituality />} />
+        <Route path="/streetPhotography" element={<StreetPhotography />} />
+        <Route path="/texturesPatterns" element={<TexturesPatterns />} />
+        <Route path="/travel" element={<Travel />} />
+        <Route path="/wallpapers" element={<Wallpapers />} />
       </Routes>
     </>
   );

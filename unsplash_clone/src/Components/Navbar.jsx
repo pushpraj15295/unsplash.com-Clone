@@ -16,6 +16,7 @@ import imgsearch from "../icons/imgs.png"
 import Notification from "../PopOver/Notification.jsx"
 import Profile from "../PopOver/Profile.jsx"
 import SubmitPhoto from "../PopOver/SubmitPhoto.jsx"
+import ExtraLink from '../PopOver/ExtraLink'
 
 //////////////////////////////////////////////////////////////////////////////////
 const Navbar = () => {
@@ -64,7 +65,7 @@ const Navbar = () => {
 
 
     <Box width="20px" cursor="pointer" >
-        <Popover>
+        <Popover placement="bottom-end">
         <PopoverTrigger><Img  src={bell} /></PopoverTrigger>
         <Notification/>
         </Popover>
@@ -72,13 +73,23 @@ const Navbar = () => {
     <Box cursor="pointer" bgColor="lightgrey" color="grey" border="1px solid lightgrey" width="32px" height="32px" borderRadius="50px">
         
         
-        <Popover>
+        <Popover placement="bottom-end">
         <PopoverTrigger><i class="fa-solid fa-user"></i></PopoverTrigger>
         <Profile/>
         </Popover>
          
         </Box>
-    <Box cursor="pointer" width="25px"> <Img  color="rgb(238,238,238)" src={hemb} /></Box>
+    <Box cursor="pointer" width="25px">
+      
+    <Popover placement="bottom-end">
+       <PopoverTrigger>
+       <Img  color="rgb(238,238,238)" src={hemb} />
+    </PopoverTrigger>
+         
+         <ExtraLink  />
+    </Popover>
+
+       </Box>
 
          </Flex>
     </Box>

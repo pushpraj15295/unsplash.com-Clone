@@ -5,7 +5,7 @@ const Notification = () => {
   return (
     
    
-    <PopoverContent mr="15px">
+    <PopoverContent>
     <PopoverArrow  />
     <PopoverCloseButton />
     

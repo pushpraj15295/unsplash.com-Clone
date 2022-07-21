@@ -16,7 +16,7 @@ import React from "react";
 const ExtraLink = () => {
   return (
     <>
-      <PopoverContent zIndex={4} w="600px" border="1px solid lightgrey">
+      <PopoverContent zIndex={4} w="600px" border="1px solid lightgrey" backgroundColor="rgb(246,245,244)">
         <PopoverHeader fontWeight="semibold" border="none">
           <SimpleGrid columns={3} margin="20px" mb="0">
             <Flex gap="1rem">

@@ -19,6 +19,7 @@ import Notification from "../PopOver/Notification.jsx"
 import Profile from "../PopOver/Profile.jsx"
 import SubmitPhoto from "../PopOver/SubmitPhoto.jsx"
 import ExtraLink from '../PopOver/ExtraLink'
+import Recomandation from '../PopOver/Recomandation'
 
 //////////////////////////////////////////////////////////////////////////////////
 const Navbar = () => {
@@ -45,7 +46,22 @@ const Navbar = () => {
       children={<Img cursor="pointer" width="18px" color="lightgray" src={search} />}
      
     />
-    <Input placeholder='Search free high resolution-photos' borderRadius="40px"  bgColor="rgb(238,238,238)" />
+
+
+
+<Popover>
+       <PopoverTrigger  className="border-b">
+       <Input placeholder='     Search free high resolution-photos' borderRadius="40px"  bgColor="rgb(238,238,238)" />
+    </PopoverTrigger>
+         
+         <Recomandation  />
+    </Popover>
+    
+
+
+
+
+
     <InputRightElement
       color='rgb(238,238,238)'
       fontSize='1.8em'

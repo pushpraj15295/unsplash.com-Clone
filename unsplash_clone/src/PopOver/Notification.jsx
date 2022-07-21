@@ -5,7 +5,7 @@ const Notification = () => {
   return (
     
    
-    <PopoverContent>
+    <PopoverContent backgroundColor="rgb(246,245,244)">
     <PopoverArrow  />
     <PopoverCloseButton />
     

@@ -36,7 +36,7 @@ function SubmitPhoto({btnRef,onOpen,onClose,isOpen,scrollBehavior}) {
           <ModalContent>
         
             <ModalBody>
-               <Box width="80%" margin="auto">
+               <Box width="80%" margin="auto" backgroundColor="rgb(246,245,244)">
                   <Flex gap="1rem" mt="35px">
                       <Box width="56%">
                         

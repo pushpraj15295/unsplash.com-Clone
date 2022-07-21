@@ -6,6 +6,8 @@ import { Box, Button, Flex, Img, Input, InputGroup, InputLeftElement, InputRight
     ModalBody,
     ModalCloseButton, } from '@chakra-ui/react'
 
+    import '../App.css'
+
 import React, { useRef, useState } from 'react'
 import unIcon from "../icons/icon1.png"
 import bell from "../icons/bell.png"
@@ -31,13 +33,14 @@ const Navbar = () => {
     <>
 
     <Box bgColor="rgb(255,255,255)" height="60px" width="99%">
-        <Flex justifyContent="space-between" alignItems="center" marginTop="14px">
+        <Flex justifyContent="space-between" alignItems="center" marginTop="10px">
           <Box width="33px" marginLeft="25px" cursor="pointer" > <Img src={unIcon} /></Box> 
           {/* <Spacer/> */}
            <InputGroup width="1000px" >
     <InputLeftElement
     //   pointerEvents='none'
       color='rgb(238,238,238)'
+      className="border-b"
       fontSize='1.2em'
       children={<Img cursor="pointer" width="18px" color="lightgray" src={search} />}
      
@@ -46,14 +49,15 @@ const Navbar = () => {
     <InputRightElement
       color='rgb(238,238,238)'
       fontSize='1.8em'
+      className="border-b"
       children={<Img cursor="pointer" width="18px" color="lightgray" src={imgsearch} />} />
   </InputGroup> 
     
-    <Box cursor="pointer"><Text fontSize='md' color='rgb(128,123,158)'>Advertise</Text></Box>
-    <Box cursor="pointer"><Text fontSize='md' color='rgb(128,123,158)'>Blog</Text></Box>
+    <Box   cursor="pointer">  <Text className="border-b" fontSize='md' color='rgb(128,123,158)'>Advertise</Text></Box>
+    <Box   cursor="pointer">   <Text className="border-b" fontSize='md' color='rgb(128,123,158)'>Blog</Text></Box>
 
 
-    <Box> <Button cursor="pointer"
+    <Box> <Button  className="border-b" cursor="pointer"
      color='rgb(128,123,158)' 
      variant='outline'
      mt={3} ref={btnRef} onClick={onOpen}
@@ -64,9 +68,9 @@ const Navbar = () => {
       </Box>
 
 
-    <Box width="20px" cursor="pointer" >
+    <Box  width="20px" cursor="pointer" >
         <Popover placement="bottom-end">
-        <PopoverTrigger><Img  src={bell} /></PopoverTrigger>
+        <PopoverTrigger  className="border-b"><Img  src={bell} /></PopoverTrigger>
         <Notification/>
         </Popover>
     </Box>
@@ -82,7 +86,7 @@ const Navbar = () => {
     <Box cursor="pointer" width="25px">
       
     <Popover placement="bottom-end">
-       <PopoverTrigger>
+       <PopoverTrigger  className="border-b">
        <Img  color="rgb(238,238,238)" src={hemb} />
     </PopoverTrigger>
          

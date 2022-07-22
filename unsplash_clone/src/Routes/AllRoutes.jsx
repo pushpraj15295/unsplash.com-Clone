@@ -16,10 +16,11 @@ import Following from "../Pages/Following";
 import FoodDrink from "../Pages/FoodDrink";
 import HealthWellness from "../Pages/HealthWellness";
 import History from "../Pages/History";
+import Interiors from "../Pages/Interiors";
 import Nature from "../Pages/Nature";
 import People from "../Pages/People";
 import Spirituality from "../Pages/Spirituality";
-import StreetPhotography from "../Pages/StreetPhotography";
+import StreetPhotograph from "../Pages/StreetPhotography";
 import TexturesPatterns from "../Pages/TexturesPatterns";
 import Travel from "../Pages/Travel";
 import Wallpapers from "../Pages/Wallpapers";
@@ -48,7 +49,7 @@ const AllRoutes = () => {
         <Route path="/nature" element={<Nature />} />
         <Route path="/People" element={<People />} />
         <Route path="/spirituality" element={<Spirituality />} />
-        <Route path="/streetPhotography" element={<StreetPhotography />} />
+        <Route path="/streetPhotography" element={<StreetPhotograph />} />
         <Route path="/texturesPatterns" element={<TexturesPatterns />} />
         <Route path="/travel" element={<Travel />} />
         <Route path="/wallpapers" element={<Wallpapers />} />

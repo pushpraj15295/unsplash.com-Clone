@@ -1,6 +1,6 @@
 import { Box, Flex, SimpleGrid } from "@chakra-ui/react";
 import React from "react";
-import '../App.css'
+import "../App.css";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,8 +14,8 @@ import "swiper/css/scrollbar";
 
 const Menubar = () => {
   return (
-    <>
-      <Flex gap="1rem" alignItems="left" m="13px" color="grey" >
+    <Box width="100%" position="fixed" backgroundColor="#fff" fontSize="15px">
+      <Flex gap="1rem" alignItems="left" m="13px" color="grey" height="25px">
         <Flex
           gap="1.5rem"
           alignItems="center"
@@ -23,7 +23,6 @@ const Menubar = () => {
           borderRight="2px solid lightgrey"
         >
           <Box className="border-b">
-            {" "}
             <Link to="/editorial">Editorial</Link>
           </Box>
 
@@ -31,21 +30,21 @@ const Menubar = () => {
             <Link to="/following">Following</Link>
           </Box>
         </Flex>
-        <Box width="88%">
+        <Box width="88%" height="25px">
           <Swiper
             // install Swiper modules
 
-            modules={[Navigation]}
+            modules={[Scrollbar]}
             // spaceBetween={0}
-            slidesPerView={10}
-            navigation
+            slidesPerView={12}
+            // navigation
             // pagination={{ clickable: true }}
             // scrollbar={{ draggable: true }}
             // onSwiper={(swiper) => console.log(swiper)}
             // onSlideChange={() => console.log('slide change')}
           >
             <SwiperSlide className="border-b">
-              <Link to="/following">Following</Link>
+              <Link to="/renders">Renders</Link>
             </SwiperSlide>
             <SwiperSlide className="border-b">
               <Link to="/animals">Animals</Link>
@@ -96,7 +95,7 @@ const Menubar = () => {
               <Link to="/spirituality">Spirituality</Link>
             </SwiperSlide>
             <SwiperSlide className="border-b">
-              <Link to="/streetPhotography">StreetPhotography</Link>
+              <Link to="/streetPhotography">StreetPhoto</Link>
             </SwiperSlide>
             <SwiperSlide className="border-b">
               <Link to="/texturesPatterns">TexturesPatterns</Link>
@@ -110,7 +109,7 @@ const Menubar = () => {
           </Swiper>
         </Box>
       </Flex>
-    </>
+    </Box>
   );
 };
 

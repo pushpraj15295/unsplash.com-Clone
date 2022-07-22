@@ -15,7 +15,12 @@ import React from "react";
 const Recomandation = () => {
   return (
     <>
-      <PopoverContent zIndex={4} w="990px" border="1px solid lightgrey" backgroundColor="rgb(246,245,244)">
+      <PopoverContent
+        zIndex={4}
+        w="950px"
+        border="1px solid lightgrey"
+        backgroundColor="rgb(246,245,244)"
+      >
         <PopoverHeader fontWeight="semibold" border="none"></PopoverHeader>
 
         <Box textAlign="left" m="10px">
@@ -159,7 +164,7 @@ const Recomandation = () => {
             </Stack>
           </Box>
           <br />
-          <Box textAlign="left" >
+          <Box textAlign="left">
             <Heading fontSize="20px">Trending Collections</Heading>
             <br />
             <Stack direction="row" spacing={4} align="center">

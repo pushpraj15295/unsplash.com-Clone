@@ -14,12 +14,19 @@ import Recomandation from "../PopOver/Recomandation";
 import imgsearch from "../icons/imgs.png";
 import search from "../icons/search.png";
 
-import React from "react";
+import React, { useContext } from "react";
 import { useState } from "react";
 import { editorial } from "../Api";
 import "../App.css";
+import { ImgContext } from "../Context/ImgContext";
+import { useNavigate } from "react-router-dom";
 
 const Editorial = () => {
+  
+  const {fetchdata} = useContext(ImgContext)
+
+  const nav = useNavigate()
+
   const [model, setModel] = useState(false);
 
   const [tempimgSrc, setTempImgSrc] = useState("");
@@ -78,6 +85,11 @@ const Editorial = () => {
                     padding="25px"
                     placeholder="     Search free high resolution-photos"
                     bgColor="rgb(238,238,238)"
+                    onKeyPress={(e) => {
+                      if (e.key === "Enter") {
+                          fetchdata(e.target.value)
+                          nav("/search")
+                      }}}
                   />
                 </PopoverTrigger>
 

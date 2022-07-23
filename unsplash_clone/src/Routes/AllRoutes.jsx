@@ -24,12 +24,13 @@ import StreetPhotograph from "../Pages/StreetPhotography";
 import TexturesPatterns from "../Pages/TexturesPatterns";
 import Travel from "../Pages/Travel";
 import Wallpapers from "../Pages/Wallpapers";
+import Search from "../Search";
 
 const AllRoutes = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} /> */}
         <Route path="/renders" element={<Renders />} />
         <Route path="/animals" element={<Animals />} />
         <Route path="/architecture" element={<Architecture />} />
@@ -37,7 +38,7 @@ const AllRoutes = () => {
         <Route path="/athletics" element={<Athletics />} />
         <Route path="/businessWork" element={<BusinessWork />} />
         <Route path="/currentEvents" element={<CurrentEvents />} />
-        <Route path="/editorial" element={<Editorial />} />
+        <Route path="/" element={<Editorial />} />
         <Route path="/experimental" element={<Experimental />} />
         <Route path="/fashion" element={<Fashion />} />
         <Route path="/film" element={<Film />} />
@@ -53,6 +54,7 @@ const AllRoutes = () => {
         <Route path="/texturesPatterns" element={<TexturesPatterns />} />
         <Route path="/travel" element={<Travel />} />
         <Route path="/wallpapers" element={<Wallpapers />} />
+        <Route path="/search" element={<Search />} />
       </Routes>
     </>
   );

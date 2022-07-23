@@ -62,7 +62,7 @@ const Editorial = () => {
           <br />
           <br />
           <Box>
-            <InputGroup width="900px">
+            <InputGroup width="950px">
               <InputLeftElement
                 //   pointerEvents='none'
                 color="rgb(238,238,238)"

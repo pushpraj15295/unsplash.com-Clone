@@ -23,7 +23,7 @@ import {
 
 import "../App.css";
 
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import unIcon from "../icons/icon1.png";
 import bell from "../icons/bell.png";
 import hemb from "../icons/hemb.png";
@@ -36,9 +36,16 @@ import SubmitPhoto from "../PopOver/SubmitPhoto.jsx";
 import ExtraLink from "../PopOver/ExtraLink";
 import Recomandation from "../PopOver/Recomandation";
 import Menubar from "./Menubar";
+import { ImgContext } from "../Context/ImgContext";
+import { useNavigate } from "react-router-dom";
 
 //////////////////////////////////////////////////////////////////////////////////
 const Navbar = () => {
+ 
+  const {fetchdata} = useContext(ImgContext)
+
+  const nav = useNavigate()
+
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [scrollBehavior, setScrollBehavior] = useState("inside");
 
@@ -79,6 +86,12 @@ const Navbar = () => {
                   placeholder="     Search free high resolution-photos"
                   borderRadius="40px"
                   bgColor="rgb(238,238,238)"
+                  // value={query}
+                  onKeyPress={(e) => {
+                    if (e.key === "Enter") {
+                        fetchdata(e.target.value)
+                        nav("/search")
+                    }}}
                 />
               </PopoverTrigger>
 

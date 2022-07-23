@@ -23,7 +23,7 @@ const Menubar = () => {
           borderRight="2px solid lightgrey"
         >
           <Box className="border-b">
-            <Link to="/editorial">Editorial</Link>
+            <Link to="/">Editorial</Link>
           </Box>
 
           <Box className="border-b">

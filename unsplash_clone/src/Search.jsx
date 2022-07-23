@@ -1,14 +1,11 @@
-import React, { useContext } from "react";
-import { useState } from "react";
-import { editorial } from "../Api";
-import "../App.css";
-import { ImgContext } from "../Context/ImgContext";
+import React, { useContext, useState } from 'react'
+import { ImgContext } from './Context/ImgContext'
+import "./App.css"
 
-const Demo = () => {
+const Search = () => {
+    const {fdata} = useContext(ImgContext)
 
-  const {fetchdata} = useContext(ImgContext)
-
-  const [model, setModel] = useState(false);
+    const [model, setModel] = useState(false);
 
   const [tempimgSrc, setTempImgSrc] = useState("");
 
@@ -16,11 +13,9 @@ const Demo = () => {
     setTempImgSrc(imgsrc);
     setModel(true);
   };
-
   return (
-     <>
-
-    <div style={{ width: "90%", margin: "auto" }}>
+    <>
+       <div style={{ width: "90%", margin: "auto" }}>
       <div className={model ? "model open" : "model"}>
         <img src={tempimgSrc} />
         <i
@@ -31,13 +26,13 @@ const Demo = () => {
       </div>
 
       <div className="gallery">
-        {editorial.map((item, index) => {
+        {fdata.map((item) => {
           return (
-            <div className="pics" key={index}>
+            <div className="pics" key={item.id}>
               <img
-                src={item.imgsrc}
+                src={item.urls.full}
                 style={{ width: "100%" }}
-                onClick={() => getImg(item.imgsrc)}
+                onClick={() => getImg(item.urls.full)}
               />
             </div>
           );
@@ -45,7 +40,7 @@ const Demo = () => {
       </div>
     </div>
     </>
-  );
-};
+  )
+}
 
-export default Demo;
+export default Search

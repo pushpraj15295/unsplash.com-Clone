@@ -1,7 +1,7 @@
 #Project Code :-  bold-wind-7515
 
 <h1> "Unsplash.com"  </h1>
-<img src="https://raw.githubusercontent.com/pushpraj15295/early-hall-3206/main/mean.buy.png" width="400" height="200">
+<img src="https://raw.githubusercontent.com/pushpraj15295/bold-wind-7515/main/un/un1.png" width="200" height="200">
 
 <h2 style="color:Tomato;">About</h2>
 
@@ -29,28 +29,28 @@
 
 ## Glimpse and screenshots of our cloned website:
 **Landing Page**
-![Landing](https://raw.githubusercontent.com/pushpraj15295/early-hall-3206/main/mean.3.png) <br/>
+![Landing](https://raw.githubusercontent.com/pushpraj15295/bold-wind-7515/main/un/un2.png) <br/>
 
 **Sign In Page**
-![explorenow](https://github.com/pushpraj15295/early-hall-3206/blob/main/mean.2.png) <br/>
+![explorenow](https://github.com/pushpraj15295/bold-wind-7515/blob/main/un/un3.png) <br/>
 
-**Product Page**
-![new_arrival](https://github.com/pushpraj15295/early-hall-3206/blob/main/maen.5.png) <br/>
-
-
-
-**Cart Page**
-![cart Page](https://raw.githubusercontent.com/pushpraj15295/early-hall-3206/main/mean.7.png) <br/>
+**Notification Model**
+![new_arrival](https://raw.githubusercontent.com/pushpraj15295/bold-wind-7515/main/un/un4.png) <br/>
 
 
-**Footer Page**
-![cart Page](https://raw.githubusercontent.com/pushpraj15295/early-hall-3206/main/maen.6.png) <br/>
+
+**Search bar**
+![cart Page](https://raw.githubusercontent.com/pushpraj15295/bold-wind-7515/main/un/un5.png) <br/>
+
+
+**Search result**
+![cart Page](https://raw.githubusercontent.com/pushpraj15295/bold-wind-7515/main/un/un6.png) <br/>
 
 <br/><br/><br/>
 
 <h3 style="color:Tomato;">
-    build this website clone during construct week in just 5 days. 
-    Most focused on UI part.
+    build this website clone during construct week in just 4 days. 
+    It was a individual project
 </h3>
 <br/> <br/>
 <h2 style="color:Tomato;">
